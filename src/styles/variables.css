@@ -1,0 +1,473 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --ph-color-base-white: #ffffff;
+  --ph-color-base-black: #000000;
+  --ph-color-green-50: #f0fdf4;
+  --ph-color-green-100: #dcfce7;
+  --ph-color-green-200: #bbf7d0;
+  --ph-color-green-300: #86efac;
+  --ph-color-green-400: #4ade80;
+  --ph-color-green-500: #22c55e;
+  --ph-color-green-600: #16a34a;
+  --ph-color-green-700: #15803d;
+  --ph-color-green-800: #166534;
+  --ph-color-green-900: #14532d;
+  --ph-color-red-50: #fef2f2;
+  --ph-color-red-100: #fee2e2;
+  --ph-color-red-200: #fecaca;
+  --ph-color-red-300: #fca5a5;
+  --ph-color-red-400: #f87171;
+  --ph-color-red-500: #ef4444;
+  --ph-color-red-600: #dc2626;
+  --ph-color-red-700: #b91c1c;
+  --ph-color-red-800: #7f1d1d;
+  --ph-color-red-900: #450a0a;
+  --ph-color-amber-50: #fffbeb;
+  --ph-color-amber-100: #fef3c7;
+  --ph-color-amber-200: #fde68a;
+  --ph-color-amber-300: #fcd34d;
+  --ph-color-amber-400: #fbbf24;
+  --ph-color-amber-500: #f59e0b;
+  --ph-color-amber-600: #d97706;
+  --ph-color-amber-700: #b45309;
+  --ph-color-amber-800: #92400e;
+  --ph-color-amber-900: #78350f;
+  --ph-color-blue-50: #eff6ff;
+  --ph-color-blue-100: #dbeafe;
+  --ph-color-blue-200: #bfdbfe;
+  --ph-color-blue-300: #93c5fd;
+  --ph-color-blue-400: #60a5fa;
+  --ph-color-blue-500: #3b82f6;
+  --ph-color-blue-600: #2563eb;
+  --ph-color-blue-700: #1d4ed8;
+  --ph-color-blue-800: #1e40af;
+  --ph-color-blue-900: #1e3a8a;
+  --ph-color-purple-50: #f0ecfe;
+  --ph-color-purple-100: #cabcfa;
+  --ph-color-purple-200: #a58cf7;
+  --ph-color-purple-300: #7f5df4;
+  --ph-color-purple-400: #5b2ff1;
+  --ph-color-purple-500: #3d0fdc;
+  --ph-color-purple-600: #300cac;
+  --ph-color-purple-700: #23087c;
+  --ph-color-purple-800: #15054c;
+  --ph-color-purple-900: #08021d;
+  --ph-color-slate-50: #f8fafc;
+  --ph-color-slate-100: #f1f5f9;
+  --ph-color-slate-200: #e2e8f0;
+  --ph-color-slate-300: #cbd5e1;
+  --ph-color-slate-400: #94a3b8;
+  --ph-color-slate-500: #64748b;
+  --ph-color-slate-600: #475569;
+  --ph-color-slate-700: #334155;
+  --ph-color-slate-800: #1e293b;
+  --ph-color-slate-900: #0f172a;
+  --ph-color-slate-950: #020617;
+  --ph-color-background-overlay-default: rgba(0, 0, 0, 0.5);
+  --ph-color-background-overlay-strong: rgba(0, 0, 0, 0.6);
+  --ph-color-background-overlay-subtle: rgba(0, 0, 0, 0.3);
+  --ph-control-label-control-spacing-below: 8px; /** Spacing between control label and input field below it */
+  --ph-control-label-control-spacing-between-label-and-required: 4px; /** Spacing between label text and required asterisk */
+  --ph-control-label-choice-spacing-left: 8px; /** Spacing to the left of choice label (between control and label) */
+  --ph-control-label-choice-spacing-right: 16px; /** Spacing to the right of choice label (horizontal groups) */
+  --ph-control-label-choice-spacing-stacked: 12px; /** Spacing below choice label when stacked vertically */
+  --ph-control-label-helper-text-spacing-above-helper: 4px; /** Spacing between input and helper text below */
+  --ph-button-height-lg: 48px;
+  --ph-button-height-base: 40px;
+  --ph-button-height-sm: 32px;
+  --ph-textarea-min-height: 96px;
+  --ph-radio-size: 20px;
+  --ph-radio-dot-color-size: 10px; /** Size of the inner dot when selected */
+  --ph-radio-border-width: 2px;
+  --ph-radio-tap-target-min-size: 44px;
+  --ph-checkbox-size: 20px;
+  --ph-checkbox-icon-size: 14px;
+  --ph-checkbox-tap-target-min-size: 44px;
+  --ph-table-row-min-height: 44px;
+  --ph-font-family: Inter;
+  --ph-font-weight-regular: Regular;
+  --ph-font-weight-medium: Medium;
+  --ph-font-weight-semi-bold: Semi Bold;
+  --ph-font-weight-bold: Bold;
+  --ph-font-line-height-1: 100%; /** No extra spacing. Use only for single-line display text 60px+, badges, or compact UI elements. Never use for multi-line text. */
+  --ph-font-line-height-2: 120%; /** Tight spacing for impact. Use for large display text 36px+, hero headers, and page titles */
+  --ph-font-line-height-3: 150%; /** Default spacing for all body text, form fields, labels, buttons, and general UI. WCAG 2.1 AA compliant minimum for readability. */
+  --ph-font-line-height-4: 162.5%; /** Comfortable spacing for sustained reading. Use for long-form content, product descriptions, help documentation, and marketing copy with multiple paragraphs. */
+  --ph-font-line-height-5: 175%; /** Maximum spacing for enhanced readability. Use for accessibility modes, legal disclaimers, terms and conditions, or when users need extra breathing room. */
+  --ph-font-size-1: 0.75rem;
+  --ph-font-size-2: 0.875rem;
+  --ph-font-size-3: 1rem;
+  --ph-font-size-4: 1.125rem;
+  --ph-font-size-5: 1.5rem;
+  --ph-font-size-6: 1.875rem;
+  --ph-font-size-7: 2.25rem;
+  --ph-font-size-8: 3rem;
+  --ph-radius-0: 0px;
+  --ph-radius-1: 2px;
+  --ph-radius-2: 4px;
+  --ph-radius-3: 8px;
+  --ph-radius-4: 12px;
+  --ph-radius-5: 16px;
+  --ph-radius-full: 9999px;
+  --ph-border-width-0: 0px; /** No border */
+  --ph-border-width-1: 1px; /** Default border width */
+  --ph-border-width-2: 2px; /** Medium border - focus states, emphasis */
+  --ph-border-width-3: 3px; /** Heavy border - strong emphasis */
+  --ph-shadow-0: 0px 0px 0px 0px #00000000; /** No shadow */
+  --ph-shadow-1: 0px 1px 2px 0px #33415526; /** Low elevation — subtle depth for cards or surfaces */
+  --ph-shadow-2: 0px 0px 0px 0px #000000; /** Medium elevation — for popovers or floating cards */
+  --ph-shadow-3: 0px 0px 0px 0px #000000; /** High elevation — for dialogs, modals, and overlays */
+  --ph-shadow-4: 0px 0px 0px 0px #000000; /** High elevation — for dialogs, modals, and overlays */
+  --ph-shadow-focus: 0px 0px 0px 3px #64748B66; /** Focus ring or accent glow */
+  --ph-duration: 200ms; /** Standard transition for all form control state changes */
+  --ph-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --ph-spacing-0: 0px;
+  --ph-spacing-2: 2px;
+  --ph-spacing-4: 4px;
+  --ph-spacing-8: 8px;
+  --ph-spacing-12: 12px;
+  --ph-spacing-16: 16px;
+  --ph-spacing-20: 20px;
+  --ph-spacing-24: 24px;
+  --ph-spacing-28: 28px;
+  --ph-spacing-32: 32px;
+  --ph-spacing-36: 36px;
+  --ph-spacing-40: 40px;
+  --ph-spacing-44: 44px;
+  --ph-spacing-48: 48px;
+  --ph-spacing-56: 56px;
+  --ph-spacing-64: 64px;
+  --ph-spacing-80: 80px;
+  --ph-spacing-96: 96px;
+  --ph-focus-width-default: 2px; /** Standard focus ring width - WCAG 2.1 compliant */
+  --ph-focus-offset-default: 2px; /** Gap between component edge and focus ring */
+  --ph-link-inline-default-text-decoration-value: underline;
+  --ph-link-inline-default-text-decoration-type: textDecoration;
+  --ph-link-inline-default-text-underline-offset-value: 2px;
+  --ph-link-inline-default-text-underline-offset-type: dimension;
+  --ph-link-inline-default-text-decoration-thickness-value: 1px;
+  --ph-link-inline-default-text-decoration-thickness-type: dimension;
+  --ph-link-inline-default-color-type: color;
+  --ph-link-inline-hover-text-decoration-thickness-value: 2px;
+  --ph-link-inline-hover-text-decoration-thickness-type: dimension;
+  --ph-link-inline-hover-color-type: color;
+  --ph-link-inline-focus-outline-type: border;
+  --ph-link-inline-focus-outline-offset-value: 2px;
+  --ph-link-inline-focus-outline-offset-type: dimension;
+  --ph-color-primary-50: var(--ph-color-purple-50);
+  --ph-color-primary-100: var(--ph-color-purple-100);
+  --ph-color-primary-200: var(--ph-color-purple-200);
+  --ph-color-primary-300: var(--ph-color-purple-300);
+  --ph-color-primary-400: var(--ph-color-purple-400);
+  --ph-color-primary-500: var(--ph-color-purple-500);
+  --ph-color-primary-600: var(--ph-color-purple-600);
+  --ph-color-primary-700: var(--ph-color-purple-700);
+  --ph-color-primary-800: var(--ph-color-purple-800);
+  --ph-color-primary-900: var(--ph-color-purple-900);
+  --ph-color-error-background: var(--ph-color-red-100);
+  --ph-color-error-text: var(--ph-color-red-800);
+  --ph-color-error-border: var(--ph-color-red-700);
+  --ph-color-error-icon: var(--ph-color-red-700);
+  --ph-color-success-background: var(--ph-color-green-100);
+  --ph-color-success-text: var(--ph-color-green-800);
+  --ph-color-success-border: var(--ph-color-green-700);
+  --ph-color-success-icon: var(--ph-color-green-700);
+  --ph-color-warning-background: var(--ph-color-amber-100);
+  --ph-color-warning-border: var(--ph-color-amber-800);
+  --ph-color-warning-text: var(--ph-color-amber-900);
+  --ph-color-warning-icon: var(--ph-color-amber-800);
+  --ph-color-info-background: var(--ph-color-blue-100);
+  --ph-color-info-border: var(--ph-color-blue-800);
+  --ph-color-info-text: var(--ph-color-blue-900);
+  --ph-color-info-icon: var(--ph-color-blue-800);
+  --ph-color-background-page: var(--ph-color-slate-50);
+  --ph-color-background-surface: var(--ph-color-base-white);
+  --ph-color-border-ui: var(--ph-color-slate-200);
+  --ph-color-border-default: var(--ph-color-slate-200); /** Standard borders on inputs, cards */
+  --ph-color-border-subtle: var(--ph-color-slate-100); /** Light borders, dividers */
+  --ph-color-border-strong: var(--ph-color-slate-400); /** Emphasized borders */
+  --ph-color-border-disabled: var(--ph-color-slate-400); /** Disabled element borders */
+  --ph-color-text-primary: var(--ph-color-slate-950);
+  --ph-color-text-secondary: var(--ph-color-slate-700);
+  --ph-color-text-muted: var(--ph-color-slate-500);
+  --ph-color-text-inverted: var(--ph-color-base-white);
+  --ph-color-text-placeholder: var(--ph-color-slate-500);
+  --ph-color-text-disabled: var(--ph-color-slate-500);
+  --ph-color-text-error: var(--ph-color-red-600);
+  --ph-color-text-success: var(--ph-color-green-600);
+  --ph-color-text-warning: var(--ph-color-amber-600);
+  --ph-control-label-control-color-required: var(--ph-color-red-500); /** Color for required indicator (asterisk) */
+  --ph-control-border-color-default: var(--ph-color-slate-400);
+  --ph-control-border-color-hover: var(--ph-color-slate-500);
+  --ph-control-background-color-default: var(--ph-color-base-white);
+  --ph-control-background-color-disabled: var(--ph-color-slate-200);
+  --ph-control-padding-x: var(--ph-spacing-12); /** Horizontal padding for text inputs */
+  --ph-control-padding-y: var(--ph-spacing-8); /** Vertical padding for text inputs */
+  --ph-control-icon-gap: var(--ph-spacing-8);
+  --ph-button-typography-lg: var(--ph-font-weight-medium) var(--ph-font-size-4)/var(--ph-font-line-height-2) var(--ph-font-family); /** Large buttons 18px */
+  --ph-button-typography-base: var(--ph-font-weight-medium) var(--ph-font-size-3)/var(--ph-font-line-height-2) var(--ph-font-family); /** Default buttons 16px */
+  --ph-button-typography-sm: var(--ph-font-weight-medium) var(--ph-font-size-2)/var(--ph-font-line-height-2) var(--ph-font-family); /** Small buttons 14px */
+  --ph-button-padding-lg-x: var(--ph-spacing-20);
+  --ph-button-padding-base-x: var(--ph-spacing-16);
+  --ph-button-padding-small-x: var(--ph-spacing-12);
+  --ph-button-secondary-background-color-default: var(--ph-color-base-white);
+  --ph-button-secondary-background-color-focus: var(--ph-color-base-white);
+  --ph-button-tertiary-background-color-default: var(--ph-color-base-white);
+  --ph-button-tertiary-background-color-hover: var(--ph-color-slate-200);
+  --ph-button-tertiary-background-color-active: var(--ph-color-slate-300);
+  --ph-button-tertiary-background-color-focus: var(--ph-color-base-white);
+  --ph-button-tertiary-border-color-default: var(--ph-color-slate-400);
+  --ph-button-tertiary-border-color-hover: var(--ph-color-slate-500);
+  --ph-button-tertiary-border-color-focus: var(--ph-color-slate-400);
+  --ph-button-tertiary-border-color-active: var(--ph-color-slate-600);
+  --ph-button-tertiary-text-color-default: var(--ph-color-slate-600);
+  --ph-button-tertiary-text-color-hover: var(--ph-color-slate-600);
+  --ph-button-tertiary-text-color-active: var(--ph-color-slate-700);
+  --ph-button-destructive-background-color-default: var(--ph-color-red-500);
+  --ph-button-destructive-background-color-hover: var(--ph-color-red-600);
+  --ph-button-destructive-background-color-active: var(--ph-color-red-700);
+  --ph-button-destructive-background-color-focus: var(--ph-color-red-600);
+  --ph-button-destructive-border-color-default: var(--ph-color-red-500);
+  --ph-button-destructive-border-color-hover: var(--ph-color-red-600);
+  --ph-button-destructive-border-color-active: var(--ph-color-red-700);
+  --ph-button-destructive-border-color-focus: var(--ph-color-red-600);
+  --ph-button-ghost-background-color-default: var(--ph-color-base-white);
+  --ph-button-ghost-background-color-hover: var(--ph-color-base-white);
+  --ph-button-ghost-background-color-active: var(--ph-color-base-white);
+  --ph-button-ghost-background-color-disabled: var(--ph-color-base-white);
+  --ph-button-ghost-border-color-default: var(--ph-color-base-white);
+  --ph-button-ghost-border-color-hover: var(--ph-color-base-white);
+  --ph-button-ghost-border-color-active: var(--ph-color-base-white);
+  --ph-button-ghost-border-color-disabled: var(--ph-color-base-white);
+  --ph-button-ghost-text-color-default: var(--ph-color-slate-600);
+  --ph-button-ghost-text-color-focus: var(--ph-color-slate-600);
+  --ph-input-icon-size: var(--ph-font-size-3);
+  --ph-select-control-icon-size: var(--ph-font-size-3);
+  --ph-select-menu-option-padding-x: var(--ph-spacing-8);
+  --ph-select-menu-option-padding-y: var(--ph-spacing-8);
+  --ph-radio-radius: var(--ph-radius-full);
+  --ph-radio-spacing-label-gap: var(--ph-spacing-8);
+  --ph-checkbox-border-spacing-label-gap: var(--ph-spacing-8);
+  --ph-checkbox-spacing-label-gap: var(--ph-spacing-2);
+  --ph-table-background-row-default: var(--ph-color-base-white);
+  --ph-table-background-row-zebra: var(--ph-color-slate-50);
+  --ph-table-cell-padding-x: var(--ph-spacing-12);
+  --ph-table-cell-padding-y: var(--ph-spacing-12);
+  --ph-radius-small: var(--ph-radius-2);
+  --ph-radius-medium: var(--ph-radius-4);
+  --ph-radius-rounded: var(--ph-radius-full);
+  --ph-border-width-none: var(--ph-border-width-0); /** No border */
+  --ph-border-width-default: var(--ph-border-width-1); /** 1px standard borders */
+  --ph-border-width-emphasis: var(--ph-border-width-2); /** 2px focus states */
+  --ph-border-width-strong: var(--ph-border-width-3); /** 3px active states */
+  --ph-typography-display-xl: var(--ph-font-weight-bold) var(--ph-font-size-8)/var(--ph-font-line-height-2) var(--ph-font-family);
+  --ph-typography-display-lg: var(--ph-font-weight-bold) var(--ph-font-size-7)/var(--ph-font-line-height-2) var(--ph-font-family);
+  --ph-typography-heading-xl: var(--ph-font-weight-semi-bold) var(--ph-font-size-6)/var(--ph-font-line-height-2) var(--ph-font-family);
+  --ph-typography-heading-lg: var(--ph-font-weight-semi-bold) var(--ph-font-size-5)/var(--ph-font-line-height-2) var(--ph-font-family);
+  --ph-typography-heading-md: var(--ph-font-weight-semi-bold) var(--ph-font-size-4)/var(--ph-font-line-height-3) var(--ph-font-family); /** Subsections 18px */
+  --ph-typography-heading-sm: var(--ph-font-weight-semi-bold) var(--ph-font-size-3)/var(--ph-font-line-height-3) var(--ph-font-family);
+  --ph-typography-body-lg: var(--ph-font-weight-regular) var(--ph-font-size-4)/var(--ph-font-line-height-4) var(--ph-font-family);
+  --ph-typography-body-base: var(--ph-font-weight-regular) var(--ph-font-size-3)/var(--ph-font-line-height-3) var(--ph-font-family);
+  --ph-typography-body-small: var(--ph-font-weight-regular) var(--ph-font-size-2)/var(--ph-font-line-height-3) var(--ph-font-family);
+  --ph-typography-body-xs: var(--ph-font-weight-regular) var(--ph-font-size-1)/var(--ph-font-line-height-4) var(--ph-font-family);
+  --ph-typography-label-base: var(--ph-font-weight-medium) var(--ph-font-size-2)/var(--ph-font-line-height-3) var(--ph-font-family); /** Form labels 14px medium */
+  --ph-typography-label-sm: var(--ph-font-weight-medium) var(--ph-font-size-1)/var(--ph-font-line-height-3) var(--ph-font-family); /** Small labels 12px medium */
+  --ph-focus-color-error: var(--ph-color-red-100); /** Focus ring for error state inputs/buttons */
+  --ph-focus-color-success: var(--ph-color-green-100); /** Focus ring for success state components */
+  --ph-focus-color-warning: var(--ph-color-amber-100); /** Focus ring for warning state components */
+  --ph-focus-error: 0px 0px 0px var(--ph-focus-width-default)px var(--ph-focus-color-error); /** Focus ring for invalid inputs */
+  --ph-focus-success: 0px 0px 0px var(--ph-focus-width-default)px var(--ph-focus-color-success); /** Focus ring for success state components */
+  --ph-elevation-medium: var(--ph-shadow-3); /** Dropdowns, tooltips */
+  --ph-elevation-high: var(--ph-shadow-4); /** Modals, dialogs */
+  --ph-focus-color-default: var(--ph-color-primary-100); /** Primary focus indicator */
+  --ph-focus-default: 0px 0px 0px var(--ph-focus-width-default)px var(--ph-focus-color-default); /** Standard focus ring for buttons, inputs, selects */
+  --ph-focus-inset: 0px 0px 0px var(--ph-focus-width-default)px var(--ph-focus-color-default); /** Inner focus ring for interactive cards, table rows */
+  --ph-elevation-none: var(--ph-shadow-0); /** No elevation */
+  --ph-elevation-low: var(--ph-shadow-2); /** Cards, panels */
+  --ph-color-border-focus: var(--ph-color-primary-500); /** Focus rings - references theme */
+  --ph-color-text-link-default: var(--ph-color-primary-500);
+  --ph-color-text-link-hover: var(--ph-color-primary-700);
+  --ph-color-text-link-active: var(--ph-color-primary-800);
+  --ph-color-text-link-visited: var(--ph-color-primary-600);
+  --ph-control-focus: var(--ph-focus-default);
+  --ph-control-border-color-error: var(--ph-color-error-border);
+  --ph-control-border-color-success: var(--ph-color-success-border);
+  --ph-control-border-color-disabled: var(--ph-color-border-disabled);
+  --ph-control-border-width: var(--ph-border-width-default);
+  --ph-control-background-color-error: var(--ph-color-error-background);
+  --ph-button-radius: var(--ph-radius-small);
+  --ph-button-icon-gap: var(--ph-control-icon-gap);
+  --ph-button-border-width: var(--ph-border-width-default);
+  --ph-button-box-shadow-focus: var(--ph-focus-default);
+  --ph-button-primary-background-color-default: var(--ph-color-primary-500);
+  --ph-button-primary-background-color-hover: var(--ph-color-primary-600);
+  --ph-button-primary-background-color-active: var(--ph-color-primary-700);
+  --ph-button-primary-background-color-focus: var(--ph-color-primary-500);
+  --ph-button-primary-background-color-disabled: var(--ph-control-background-color-disabled);
+  --ph-button-primary-text-color-default: var(--ph-color-text-inverted);
+  --ph-button-primary-text-color-disabled: var(--ph-color-text-disabled);
+  --ph-button-primary-border-color-default: var(--ph-color-primary-500); /** Default border for all buttons to preserve spacing */
+  --ph-button-primary-border-color-hover: var(--ph-color-primary-600);
+  --ph-button-primary-border-color-active: var(--ph-color-primary-500);
+  --ph-button-primary-border-color-focus: var(--ph-color-primary-500);
+  --ph-button-secondary-background-color-hover: var(--ph-color-primary-50);
+  --ph-button-secondary-background-color-active: var(--ph-color-primary-100);
+  --ph-button-secondary-background-color-disabled: var(--ph-control-background-color-disabled);
+  --ph-button-secondary-border-color-default: var(--ph-color-primary-400);
+  --ph-button-secondary-border-color-hover: var(--ph-color-primary-500);
+  --ph-button-secondary-border-color-active: var(--ph-color-primary-700);
+  --ph-button-secondary-border-color-focus: var(--ph-color-primary-400);
+  --ph-button-secondary-text-color-default: var(--ph-color-primary-400);
+  --ph-button-secondary-text-color-hover: var(--ph-color-primary-500);
+  --ph-button-secondary-text-color-active: var(--ph-color-primary-700);
+  --ph-button-secondary-text-color-disabled: var(--ph-color-text-disabled);
+  --ph-button-tertiary-background-color-disabled: var(--ph-control-background-color-disabled);
+  --ph-button-tertiary-text-color-disabled: var(--ph-color-text-disabled);
+  --ph-button-destructive-background-color-disabled: var(--ph-control-background-color-disabled);
+  --ph-button-destructive-text-default: var(--ph-color-text-inverted);
+  --ph-button-destructive-text-disabled: var(--ph-color-text-disabled);
+  --ph-button-ghost-text-color-hover: var(--ph-color-primary-600);
+  --ph-button-ghost-text-color-active: var(--ph-color-primary-700);
+  --ph-button-ghost-text-color-disabled: var(--ph-color-text-disabled);
+  --ph-input-background-color-default: var(--ph-control-background-color-default);
+  --ph-input-background-color-disabled: var(--ph-control-background-color-disabled);
+  --ph-input-border-color-default: var(--ph-control-border-color-default);
+  --ph-input-border-color-hover: var(--ph-control-border-color-hover);
+  --ph-input-border-width: var(--ph-border-width-default);
+  --ph-input-text-color-default: var(--ph-color-text-primary);
+  --ph-input-text-color-placeholder: var(--ph-color-text-placeholder);
+  --ph-input-text-color-muted: var(--ph-color-text-muted);
+  --ph-input-text-color-disabled: var(--ph-color-text-disabled);
+  --ph-input-text-color-error: var(--ph-color-error-text);
+  --ph-input-radius: var(--ph-radius-small);
+  --ph-input-padding-x: var(--ph-control-padding-x);
+  --ph-input-padding-y: var(--ph-control-padding-y);
+  --ph-input-box-shadow-focus: var(--ph-focus-default);
+  --ph-input-box-shadow-error: var(--ph-focus-error);
+  --ph-input-icon-color: var(--ph-color-text-muted);
+  --ph-textarea-border-color-default: var(--ph-control-border-color-default);
+  --ph-textarea-border-color-hover: var(--ph-control-border-color-hover);
+  --ph-textarea-border-width: var(--ph-border-width-default);
+  --ph-textarea-background-color-default: var(--ph-control-background-color-default);
+  --ph-textarea-background-color-disabled: var(--ph-control-background-color-disabled);
+  --ph-textarea-text-color-background-default: var(--ph-color-text-primary);
+  --ph-textarea-text-color-background-placeholder: var(--ph-color-text-placeholder);
+  --ph-textarea-text-color-background-disabled: var(--ph-color-text-disabled);
+  --ph-textarea-text-color-background-error: var(--ph-color-error-text);
+  --ph-textarea-text-padding-x: var(--ph-control-padding-x);
+  --ph-textarea-text-padding-y: var(--ph-control-padding-y);
+  --ph-textarea-radius: var(--ph-radius-small);
+  --ph-textarea-box-shadow-focus: var(--ph-focus-default);
+  --ph-textarea-box-shadow-error: var(--ph-focus-error);
+  --ph-select-control-background-color-default: var(--ph-control-background-color-default);
+  --ph-select-control-background-color-disabled: var(--ph-control-background-color-disabled);
+  --ph-select-control-background-color-error: var(--ph-color-error-background);
+  --ph-select-control-border-color-default: var(--ph-control-border-color-default);
+  --ph-select-control-border-color-hover: var(--ph-control-border-color-hover);
+  --ph-select-control-border-radius: var(--ph-radius-medium);
+  --ph-select-control-width: var(--ph-border-width-default);
+  --ph-select-control-icon-color: var(--ph-color-text-muted);
+  --ph-select-control-box-shadow-focus: var(--ph-focus-default);
+  --ph-select-control-box-shadow-error: var(--ph-focus-error);
+  --ph-select-control-padding-x: var(--ph-control-padding-x);
+  --ph-select-control-padding-y: var(--ph-control-padding-y);
+  --ph-select-control-text-color-default: var(--ph-color-text-primary);
+  --ph-select-control-text-color-placeholder: var(--ph-color-text-placeholder);
+  --ph-select-control-text-color-disabled: var(--ph-color-text-disabled);
+  --ph-select-control-text-color-error: var(--ph-color-error-text);
+  --ph-select-control-text-font: var(--ph-typography-body-base);
+  --ph-select-menu-background: var(--ph-color-background-surface);
+  --ph-select-menu-border-color: var(--ph-color-border-ui);
+  --ph-select-menu-border-width: var(--ph-border-width-default);
+  --ph-select-menu-option-background-hover: var(--ph-color-primary-100);
+  --ph-select-menu-option-background-selected: var(--ph-color-primary-300);
+  --ph-select-menu-option-text-color-default: var(--ph-color-text-primary);
+  --ph-select-menu-option-text-color-hover: var(--ph-color-text-primary);
+  --ph-select-menu-option-text-color-disabled: var(--ph-color-text-muted);
+  --ph-select-menu-option-text-font: var(--ph-typography-body-base);
+  --ph-select-menu-radius: var(--ph-radius-small);
+  --ph-radio-dot-color-selected: var(--ph-color-primary-500); /** Color of the inner dot when radio is selected */
+  --ph-radio-dot-color-disabled: var(--ph-color-text-disabled); /** Color of the inner dot when radio is disabled */
+  --ph-radio-dot-color-error: var(--ph-color-text-error); /** Color of the inner dot when radio is in error */
+  --ph-radio-border-color-default: var(--ph-control-border-color-default);
+  --ph-radio-border-color-hover: var(--ph-control-border-color-hover);
+  --ph-radio-border-color-selected: var(--ph-color-primary-500);
+  --ph-radio-background-color-default: var(--ph-control-background-color-default);
+  --ph-radio-background-color-checked: var(--ph-control-background-color-default);
+  --ph-radio-background-color-disabled: var(--ph-control-background-color-disabled);
+  --ph-radio-box-shadow-focus: var(--ph-focus-default);
+  --ph-radio-box-shadow-error: var(--ph-focus-error);
+  --ph-radio-label-typography: var(--ph-typography-label-base);
+  --ph-radio-label-color-default: var(--ph-color-text-primary);
+  --ph-radio-label-color-disabled: var(--ph-color-text-disabled);
+  --ph-checkbox-icon-color-selected: var(--ph-color-primary-500);
+  --ph-checkbox-icon-color-disabled: var(--ph-color-text-disabled);
+  --ph-checkbox-icon-color-error: var(--ph-color-text-error);
+  --ph-checkbox-radius: var(--ph-radius-small);
+  --ph-checkbox-border-color-default: var(--ph-control-border-color-default);
+  --ph-checkbox-border-color-hover: var(--ph-control-border-color-hover);
+  --ph-checkbox-border-color-selected: var(--ph-color-primary-500);
+  --ph-checkbox-border-width: var(--ph-border-width-default);
+  --ph-checkbox-background-color-default: var(--ph-control-background-color-default);
+  --ph-checkbox-background-color-indeterminate: var(--ph-color-primary-500);
+  --ph-checkbox-background-color-checked: var(--ph-color-primary-50);
+  --ph-checkbox-background-color-disabled: var(--ph-control-background-color-disabled);
+  --ph-checkbox-box-shadow-focus: var(--ph-focus-default);
+  --ph-checkbox-box-shadow-error: var(--ph-focus-error);
+  --ph-checkbox-label-typography: var(--ph-typography-label-base);
+  --ph-checkbox-label-color-default: var(--ph-color-text-primary);
+  --ph-checkbox-label-color-disabled: var(--ph-color-text-disabled);
+  --ph-table-background-header: var(--ph-color-background-surface);
+  --ph-table-background-row-hover: var(--ph-color-primary-100);
+  --ph-table-background-row-selected: var(--ph-color-primary-50);
+  --ph-table-text-header: var(--ph-color-text-secondary);
+  --ph-table-text-cell-default: var(--ph-color-text-primary);
+  --ph-table-text-cell-muted: var(--ph-color-text-muted);
+  --ph-table-text-cell-disabled: var(--ph-color-text-disabled);
+  --ph-table-border-cell: var(--ph-color-border-ui);
+  --ph-table-border-header: var(--ph-color-border-ui);
+  --ph-table-border-focus: var(--ph-color-primary-500);
+  --ph-table-radius-cell: var(--ph-radius-small);
+  --ph-table-typography-header: var(--ph-typography-label-base);
+  --ph-table-typography-cell: var(--ph-typography-body-base);
+  --ph-box-shadow-cell-focus: var(--ph-focus-inset); /** Inner shadow for focused table cell */
+  --ph-link-inline-default-color-value: var(--ph-color-primary-500);
+  --ph-link-inline-hover-color-value: var(--ph-color-primary-700);
+  --ph-link-inline-focus-outline-value: 2px solid var(--ph-color-primary-500);
+  --ph-control-border-color-active: var(--ph-color-border-focus);
+  --ph-control-border-color-focus: var(--ph-color-border-focus);
+  --ph-button-primary-border-color-disabled: var(--ph-control-border-color-disabled);
+  --ph-button-secondary-border-color-disabled: var(--ph-control-border-color-disabled);
+  --ph-button-tertiary-border-color-disabled: var(--ph-control-border-color-disabled);
+  --ph-button-destructive-border-color-disabled: var(--ph-control-border-color-disabled);
+  --ph-input-border-color-disabled: var(--ph-control-border-color-disabled);
+  --ph-input-border-color-error: var(--ph-control-border-color-error);
+  --ph-input-border-color-success: var(--ph-control-border-color-success);
+  --ph-textarea-border-color-disabled: var(--ph-control-border-color-disabled);
+  --ph-textarea-border-color-error: var(--ph-control-border-color-error);
+  --ph-textarea-border-color-success: var(--ph-control-border-color-success);
+  --ph-textarea-background-color-error: var(--ph-control-background-color-error);
+  --ph-select-control-border-color-disabled: var(--ph-control-border-color-disabled);
+  --ph-select-control-border-color-error: var(--ph-control-border-color-error);
+  --ph-select-control-border-color-success: var(--ph-control-border-color-success);
+  --ph-radio-border-color-disabled: var(--ph-control-border-color-disabled);
+  --ph-radio-border-color-error: var(--ph-control-border-color-error);
+  --ph-radio-background-color-error: var(--ph-control-background-color-error);
+  --ph-checkbox-border-color-disabled: var(--ph-control-border-color-disabled);
+  --ph-checkbox-border-color-error: var(--ph-control-border-color-error);
+  --ph-checkbox-background-color-error: var(--ph-control-background-color-error);
+  --ph-input-border-color-active: var(--ph-control-border-color-active);
+  --ph-input-border-color-focus: var(--ph-control-border-color-focus);
+  --ph-textarea-border-color-active: var(--ph-control-border-color-active);
+  --ph-textarea-border-color-focus: var(--ph-control-border-color-focus);
+  --ph-select-control-border-color-active: var(--ph-control-border-color-active);
+  --ph-select-control-border-color-focus: var(--ph-control-border-color-focus);
+  --ph-radio-border-color-active: var(--ph-control-border-color-active);
+  --ph-checkbox-border-color-active: var(--ph-control-border-color-active);
+}
