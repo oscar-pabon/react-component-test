@@ -2,6 +2,7 @@ import React from 'react';
 import './Button.css';
 
 type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'ghost' | 'destructive';
+type ButtonSize = 'small' | 'default' | 'large';
 
 interface ButtonProps {
   /**
@@ -18,6 +19,12 @@ interface ButtonProps {
    * @default 'primary'
    */
   variant?: ButtonVariant;
+  
+  /**
+   * Button size
+   * @default 'default'
+   */
+  size?: ButtonSize;
   
   /**
    * Disabled state
@@ -58,6 +65,7 @@ const Button: React.FC<ButtonProps> = ({
   label,
   onClick,
   variant = 'primary',
+  size = 'default',
   disabled = false,
   icon,
   rounded = true,
@@ -68,6 +76,7 @@ const Button: React.FC<ButtonProps> = ({
   const buttonClasses = [
     'btn',
     `btn--${variant}`,
+    `btn--${size}`,
     rounded ? 'btn--rounded' : '',
     disabled || loading ? 'btn--disabled' : '',
     loading ? 'btn--loading' : '',

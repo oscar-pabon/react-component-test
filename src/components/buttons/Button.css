@@ -29,6 +29,25 @@
   outline-offset: var(--ph-focus-offset-default);
 }
 
+/* ===== SIZE VARIANTS ===== */
+.btn--small {
+  font-size: var(--ph-font-size-2);
+  min-height: var(--ph-button-height-sm);
+  padding: var(--ph-spacing-4) var(--ph-spacing-12);
+}
+
+.btn--default {
+  font-size: var(--ph-font-size-3);
+  min-height: var(--ph-button-height-base);
+  padding: var(--ph-spacing-8) var(--ph-spacing-16);
+}
+
+.btn--large {
+  font-size: var(--ph-font-size-4);
+  min-height: var(--ph-button-height-lg);
+  padding: var(--ph-spacing-12) var(--ph-spacing-20);
+}
+
 /* ===== BORDER RADIUS ===== */
 .btn--rounded {
   border-radius: var(--ph-button-radius);

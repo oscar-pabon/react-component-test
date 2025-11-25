@@ -17,7 +17,9 @@ const App: React.FC = () => {
         <h2>Primary Variant</h2>
         <p style={{ color: '#666', marginBottom: '15px' }}>Main action buttons - vivid purple (#3d0fdc)</p>
         <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center' }}>
-          <Button label="Primary" variant="primary" onClick={() => {}} />
+          <Button label="Small" size="small" variant="primary" onClick={() => {}} />
+          <Button label="Default" size="default" variant="primary" onClick={() => {}} />
+          <Button label="Large" size="large" variant="primary" onClick={() => {}} />
           <Button label="Disabled" variant="primary" disabled onClick={() => {}} />
           <Button label="Loading" variant="primary" loading onClick={() => {}} />
         </div>
@@ -28,7 +30,9 @@ const App: React.FC = () => {
         <h2>Secondary Variant</h2>
         <p style={{ color: '#666', marginBottom: '15px' }}>Secondary actions - purple text on white background</p>
         <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center' }}>
-          <Button label="Secondary" variant="secondary" onClick={() => {}} />
+          <Button label="Small" size="small" variant="secondary" onClick={() => {}} />
+          <Button label="Default" size="default" variant="secondary" onClick={() => {}} />
+          <Button label="Large" size="large" variant="secondary" onClick={() => {}} />
           <Button label="Disabled" variant="secondary" disabled onClick={() => {}} />
           <Button label="Loading" variant="secondary" loading onClick={() => {}} />
         </div>
@@ -39,7 +43,9 @@ const App: React.FC = () => {
         <h2>Tertiary Variant</h2>
         <p style={{ color: '#666', marginBottom: '15px' }}>Subtle actions - gray text with light border</p>
         <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center' }}>
-          <Button label="Tertiary" variant="tertiary" onClick={() => {}} />
+          <Button label="Small" size="small" variant="tertiary" onClick={() => {}} />
+          <Button label="Default" size="default" variant="tertiary" onClick={() => {}} />
+          <Button label="Large" size="large" variant="tertiary" onClick={() => {}} />
           <Button label="Disabled" variant="tertiary" disabled onClick={() => {}} />
           <Button label="Loading" variant="tertiary" loading onClick={() => {}} />
         </div>
@@ -50,7 +56,9 @@ const App: React.FC = () => {
         <h2>Ghost Variant</h2>
         <p style={{ color: '#666', marginBottom: '15px' }}>Minimal appearance - transparent background, gray text</p>
         <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center' }}>
-          <Button label="Ghost" variant="ghost" onClick={() => {}} />
+          <Button label="Small" size="small" variant="ghost" onClick={() => {}} />
+          <Button label="Default" size="default" variant="ghost" onClick={() => {}} />
+          <Button label="Large" size="large" variant="ghost" onClick={() => {}} />
           <Button label="Disabled" variant="ghost" disabled onClick={() => {}} />
           <Button label="Loading" variant="ghost" loading onClick={() => {}} />
         </div>
@@ -61,7 +69,9 @@ const App: React.FC = () => {
         <h2>Destructive Variant</h2>
         <p style={{ color: '#666', marginBottom: '15px' }}>Dangerous actions - red background (#ef4444)</p>
         <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center' }}>
-          <Button label="Destructive" variant="destructive" onClick={() => {}} />
+          <Button label="Small" size="small" variant="destructive" onClick={() => {}} />
+          <Button label="Default" size="default" variant="destructive" onClick={() => {}} />
+          <Button label="Large" size="large" variant="destructive" onClick={() => {}} />
           <Button label="Disabled" variant="destructive" disabled onClick={() => {}} />
           <Button label="Loading" variant="destructive" loading onClick={() => {}} />
         </div>
