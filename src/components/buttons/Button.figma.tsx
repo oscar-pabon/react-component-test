@@ -24,15 +24,14 @@ figma.connect(
         "Large": "large",
       }),
       disabled: figma.boolean("Disabled"),
+      text: figma.string("Button Text"),
     },
     example: (props) => (
-      <Button
-        label="Button"
-        variant={props.variant || "primary"}
-        size={props.size || "default"}
-        disabled={props.disabled || false}
-        onClick={() => {}}
-      />
+      <Button 
+        label={props.text} 
+        onClick={function (): void {
+          throw new Error("Your function goes here")
+        } }  />
     ),
   },
 )

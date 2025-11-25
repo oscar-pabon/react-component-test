@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSave, faPencil, faTrash, faCog, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
+import { faSave, faPencil, faTrash, faCog, faCircleInfo, faArrowRight, faArrowLeft, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Button } from './components';
 import './styles/global.css';
 
@@ -80,13 +80,48 @@ const App: React.FC = () => {
       {/* BUTTONS WITH ICONS */}
       <section style={{ marginBottom: '50px', backgroundColor: '#fff', padding: '30px', borderRadius: '8px' }}>
         <h2>Buttons with Icons</h2>
-        <p style={{ color: '#666', marginBottom: '15px' }}>FontAwesome icons paired with text labels</p>
+        <p style={{ color: '#666', marginBottom: '15px' }}>FontAwesome icons on left and right sides of the label</p>
+        
+        <h3 style={{ marginTop: '20px', marginBottom: '10px', fontSize: '16px', color: '#333' }}>Left Icon</h3>
+        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center', marginBottom: '20px' }}>
+          <Button label="Save" variant="primary" iconLeft={<FontAwesomeIcon icon={faSave} />} onClick={() => {}} />
+          <Button label="Edit" variant="secondary" iconLeft={<FontAwesomeIcon icon={faPencil} />} onClick={() => {}} />
+          <Button label="Delete" variant="destructive" iconLeft={<FontAwesomeIcon icon={faTrash} />} onClick={() => {}} />
+          <Button label="Search" variant="tertiary" iconLeft={<FontAwesomeIcon icon={faSearch} />} onClick={() => {}} />
+          <Button label="Info" variant="ghost" iconLeft={<FontAwesomeIcon icon={faCircleInfo} />} onClick={() => {}} />
+        </div>
+
+        <h3 style={{ marginTop: '20px', marginBottom: '10px', fontSize: '16px', color: '#333' }}>Right Icon</h3>
+        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center', marginBottom: '20px' }}>
+          <Button label="Next" variant="primary" iconRight={<FontAwesomeIcon icon={faArrowRight} />} onClick={() => {}} />
+          <Button label="Back" variant="secondary" iconRight={<FontAwesomeIcon icon={faArrowLeft} />} onClick={() => {}} />
+          <Button label="Settings" variant="tertiary" iconRight={<FontAwesomeIcon icon={faCog} />} onClick={() => {}} />
+          <Button label="More" variant="ghost" iconRight={<FontAwesomeIcon icon={faCircleInfo} />} onClick={() => {}} />
+        </div>
+
+        <h3 style={{ marginTop: '20px', marginBottom: '10px', fontSize: '16px', color: '#333' }}>Both Left and Right Icons</h3>
         <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center' }}>
-          <Button label="Save" variant="primary" icon={<FontAwesomeIcon icon={faSave} />} onClick={() => {}} />
-          <Button label="Edit" variant="secondary" icon={<FontAwesomeIcon icon={faPencil} />} onClick={() => {}} />
-          <Button label="Delete" variant="destructive" icon={<FontAwesomeIcon icon={faTrash} />} onClick={() => {}} />
-          <Button label="Settings" variant="tertiary" icon={<FontAwesomeIcon icon={faCog} />} onClick={() => {}} />
-          <Button label="Info" variant="ghost" icon={<FontAwesomeIcon icon={faCircleInfo} />} onClick={() => {}} />
+          <Button 
+            label="Export" 
+            variant="primary" 
+            iconLeft={<FontAwesomeIcon icon={faSave} />}
+            iconRight={<FontAwesomeIcon icon={faArrowRight} />}
+            onClick={() => {}} 
+          />
+          <Button 
+            label="Action" 
+            variant="secondary" 
+            iconLeft={<FontAwesomeIcon icon={faSearch} />}
+            iconRight={<FontAwesomeIcon icon={faArrowRight} />}
+            onClick={() => {}} 
+          />
+          <Button 
+            label="Delete" 
+            variant="destructive" 
+            iconLeft={<FontAwesomeIcon icon={faTrash} />}
+            iconRight={<FontAwesomeIcon icon={faArrowRight} />}
+            onClick={() => {}} 
+          />
         </div>
       </section>
 

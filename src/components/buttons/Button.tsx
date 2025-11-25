@@ -8,9 +8,10 @@ interface ButtonProps {
   /**
    * Button text label
    */
-  label: string;
+  label?: string;
   
-  /**\n   * Click handler
+  /**
+   * Click handler
    */
   onClick: () => void;
   
@@ -33,9 +34,18 @@ interface ButtonProps {
   disabled?: boolean;
   
   /**
-   * Optional icon element (rendered before label)
+   * Optional icon element rendered on the left side of the label.
+   * Pass a FontAwesome icon component or any React element.
+   * @example <FontAwesomeIcon icon={faSearch} />
    */
-  icon?: React.ReactNode;
+  iconLeft?: React.ReactNode;
+  
+  /**
+   * Optional icon element rendered on the right side of the label.
+   * Pass a FontAwesome icon component or any React element.
+   * @example <FontAwesomeIcon icon={faArrowRight} />
+   */
+  iconRight?: React.ReactNode;
   
   /**
    * Whether corners should be rounded (20px vs 4px)
@@ -67,7 +77,8 @@ const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
   size = 'default',
   disabled = false,
-  icon,
+  iconLeft,
+  iconRight,
   rounded = true,
   className = '',
   loading = false,
@@ -93,8 +104,9 @@ const Button: React.FC<ButtonProps> = ({
       disabled={disabled || loading}
       aria-busy={loading}
     >
-      {icon && <span className="btn__icon">{icon}</span>}
-      <span className="btn__label">{label}</span>
+      {iconLeft && <span className="btn__icon btn__icon--left">{iconLeft}</span>}
+      {label && <span className="btn__label">{label}</span>}
+      {iconRight && <span className="btn__icon btn__icon--right">{iconRight}</span>}
     </button>
   );
 };

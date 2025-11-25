@@ -245,8 +245,19 @@
   flex-shrink: 0;
 }
 
+.btn__icon--left {
+  order: -1;
+  margin-right: var(--ph-control-icon-gap);
+}
+
+.btn__icon--right {
+  order: 1;
+  margin-left: var(--ph-control-icon-gap);
+}
+
 .btn__label {
   display: inline;
+  order: 0;
 }
 
 .btn:focus-visible {
