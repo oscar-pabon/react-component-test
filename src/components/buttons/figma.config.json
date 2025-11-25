@@ -1,0 +1,7 @@
+{
+  "codeConnect": {
+    "include": ["../../../**/*.{tsx,jsx}"],
+    "label": "React",
+    "interactiveSetupFigmaFileUrl": "https://www.figma.com/design/YSsmFp0wm28RUpu5l01XKp/Phoenix-System-Tokens?node-id=1028-3&m=dev"
+  }
+}
