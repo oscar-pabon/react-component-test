@@ -1,0 +1,11 @@
+{
+  "codegen": {
+    "figmaApiToken": "$FIGMA_TOKEN",
+    "outputDir": "./src"
+  },
+  "codeConnect": {
+    "useSSL": true,
+    "host": "localhost",
+    "port": 3000
+  }
+}
