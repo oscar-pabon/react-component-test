@@ -1,6 +1,7 @@
 import React from "react"
 import Button from "./Button"
 import figma from "@figma/code-connect"
+import './Button.css';
 
 /**
  * Code Connect mapping for the Button component from Phoenix System Tokens
@@ -24,11 +25,19 @@ figma.connect(
         "Large": "large",
       }),
       disabled: figma.boolean("Disabled"),
+      iconLeft: figma.boolean("Show Left Icon"),
+      iconRight: figma.boolean("Show Right Icon"),
+      rounded: figma.boolean("⥰ Rounded"),
       text: figma.string("Button Text"),
     },
     example: (props) => (
       <Button 
         label={props.text} 
+        disabled={props.disabled}
+        iconLeft={props["iconLeft"] ? <span>👈</span> : undefined }
+        iconRight={props["iconRight"] ? <span>👉</span> : undefined }
+        variant={props.variant} 
+        size={props.size}
         onClick={function (): void {
           throw new Error("Your function goes here")
         } }  />
