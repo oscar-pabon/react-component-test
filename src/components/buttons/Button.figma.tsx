@@ -34,10 +34,11 @@ figma.connect(
       <Button 
         label={props.text} 
         disabled={props.disabled}
-        iconLeft={props["iconLeft"] ? <span>👈</span> : undefined }
-        iconRight={props["iconRight"] ? <span>👉</span> : undefined }
+        iconLeft={props.iconLeft}
+        iconRight={props.iconRight}
         variant={props.variant} 
         size={props.size}
+        rounded={props.rounded}
         onClick={function (): void {
           throw new Error("Your function goes here")
         } }  />
