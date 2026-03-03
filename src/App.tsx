@@ -1,10 +1,9 @@
 import React from 'react';
-import { Button } from './components';
 import './styles/global.css';
 
 const App: React.FC = () => {
-  const variants: Array<'primary' | 'secondary' | 'tertiary' | 'ghost' | 'destructive'> = ['primary', 'secondary', 'tertiary', 'ghost', 'destructive'];
-  const sizes: Array<'small' | 'default' | 'large'> = ['small', 'default', 'large'];
+  const variants: Array<'primary' | 'secondary' | 'tertiary'> = ['primary', 'secondary', 'tertiary'];
+  const sizes: Array<'small' | 'medium' | 'large'> = ['small', 'medium', 'large'];
 
   return (
     <div style={{ padding: '40px', backgroundColor: '#f5f5f5', minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
@@ -22,12 +21,12 @@ const App: React.FC = () => {
           borderRadius: '8px'
         }}>
           {variants.map(variant => (
-            <Button 
+            <liva-button
               key={variant}
-              label={variant.charAt(0).toUpperCase() + variant.slice(1)}
-              variant={variant}
-              onClick={() => {}}
-            />
+              type={variant}
+            >
+              {variant.charAt(0).toUpperCase() + variant.slice(1)}
+            </liva-button>
           ))}
         </div>
       </section>
@@ -44,13 +43,13 @@ const App: React.FC = () => {
           borderRadius: '8px'
         }}>
           {sizes.map(size => (
-            <Button 
+            <liva-button
               key={size}
-              label={size.charAt(0).toUpperCase() + size.slice(1)}
-              variant="primary"
+              type="primary"
               size={size}
-              onClick={() => {}}
-            />
+            >
+              {size.charAt(0).toUpperCase() + size.slice(1)}
+            </liva-button>
           ))}
         </div>
       </section>
@@ -67,13 +66,13 @@ const App: React.FC = () => {
           borderRadius: '8px'
         }}>
           {variants.map(variant => (
-            <Button 
+            <liva-button
               key={`${variant}-disabled`}
-              label={variant.charAt(0).toUpperCase() + variant.slice(1)}
-              variant={variant}
-              disabled={true}
-              onClick={() => {}}
-            />
+              type={variant}
+              disabled
+            >
+              {variant.charAt(0).toUpperCase() + variant.slice(1)}
+            </liva-button>
           ))}
         </div>
       </section>
@@ -90,13 +89,13 @@ const App: React.FC = () => {
           borderRadius: '8px'
         }}>
           {variants.map(variant => (
-            <Button 
+            <liva-button
               key={`${variant}-rounded`}
-              label={variant.charAt(0).toUpperCase() + variant.slice(1)}
-              variant={variant}
-              rounded={true}
-              onClick={() => {}}
-            />
+              type={variant}
+              rounded
+            >
+              {variant.charAt(0).toUpperCase() + variant.slice(1)}
+            </liva-button>
           ))}
         </div>
       </section>
@@ -118,13 +117,13 @@ const App: React.FC = () => {
               borderRadius: '8px'
             }}>
               {sizes.map(size => (
-                <Button 
+                <liva-button
                   key={`${variant}-${size}`}
-                  label={size}
-                  variant={variant}
+                  type={variant}
                   size={size}
-                  onClick={() => {}}
-                />
+                >
+                  {size}
+                </liva-button>
               ))}
             </div>
           </div>
