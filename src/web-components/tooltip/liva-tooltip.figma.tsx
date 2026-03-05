@@ -7,164 +7,31 @@ import figma from "@figma/code-connect"
  * This maps the Figma design to the liva-tooltip web component (not React)
  */
 
-const livaTooltipComponent = figma.html`<liva-tooltip></liva-tooltip>`;
-
 figma.connect(
-  livaTooltipComponent,
+  "liva-tooltip",
   "https://www.figma.com/design/YSsmFp0wm28RUpu5l01XKp/Phoenix-Component-Library?node-id=3744-6350&m=dev",
   {
     variant: { Position: "Top-Left" },
     props: {
       content: figma.string("Text"),
+      position: figma.enum("Position", {
+        "Top-Left": "top-left",
+        "Bottom-Left": "bottom-left",
+        "Top-Right": "top-right",
+        "Bottom-Right": "bottom-right",
+        "Top Center": "top-center",
+        "Bottom-Center": "bottom-center",
+        "Right": "right",
+        "Left": "left",
+      }),
     },
-    example: (props) => figma.html`<!-- Import the web component -->
-<script type="module">
-  import './web-components';
-  // or: import { LivaTooltip } from './web-components/tooltip';
-</script>
-
-<!-- Use the web component -->
-<liva-tooltip content="${props.content}" position="top-left">
-  <button>Hover me</button>
-</liva-tooltip>`,
-  },
-)
-
-figma.connect(
-  livaTooltipComponent,
-  "https://www.figma.com/design/YSsmFp0wm28RUpu5l01XKp/Phoenix-Component-Library?node-id=3744-6350&m=dev",
-  {
-    variant: { Position: "Top-Right" },
-    props: {
-      content: figma.string("Text"),
-    },
-    example: (props) => figma.html`<!-- Import the web component -->
+    example: (props) => `<!-- Import the web component -->
 <script type="module">
   import './web-components';
 </script>
 
 <!-- Use the web component -->
-<liva-tooltip content="${props.content}" position="top-right">
-  <button>Hover me</button>
-</liva-tooltip>`,
-  },
-)
-
-figma.connect(
-  livaTooltipComponent,
-  "https://www.figma.com/design/YSsmFp0wm28RUpu5l01XKp/Phoenix-Component-Library?node-id=3744-6350&m=dev",
-  {
-    variant: { Position: "Top Center" },
-    props: {
-      content: figma.string("Text"),
-    },
-    example: (props) => figma.html`<!-- Import the web component -->
-<script type="module">
-  import './web-components';
-</script>
-
-<!-- Use the web component -->
-<liva-tooltip content="${props.content}" position="top-center">
-  <button>Hover me</button>
-</liva-tooltip>`,
-  },
-)
-
-figma.connect(
-  livaTooltipComponent,
-  "https://www.figma.com/design/YSsmFp0wm28RUpu5l01XKp/Phoenix-Component-Library?node-id=3744-6350&m=dev",
-  {
-    variant: { Position: "Bottom-Left" },
-    props: {
-      content: figma.string("Text"),
-    },
-    example: (props) => figma.html`<!-- Import the web component -->
-<script type="module">
-  import './web-components';
-</script>
-
-<!-- Use the web component -->
-<liva-tooltip content="${props.content}" position="bottom-left">
-  <button>Hover me</button>
-</liva-tooltip>`,
-  },
-)
-
-figma.connect(
-  livaTooltipComponent,
-  "https://www.figma.com/design/YSsmFp0wm28RUpu5l01XKp/Phoenix-Component-Library?node-id=3744-6350&m=dev",
-  {
-    variant: { Position: "Bottom-Right" },
-    props: {
-      content: figma.string("Text"),
-    },
-    example: (props) => figma.html`<!-- Import the web component -->
-<script type="module">
-  import './web-components';
-</script>
-
-<!-- Use the web component -->
-<liva-tooltip content="${props.content}" position="bottom-right">
-  <button>Hover me</button>
-</liva-tooltip>`,
-  },
-)
-
-figma.connect(
-  livaTooltipComponent,
-  "https://www.figma.com/design/YSsmFp0wm28RUpu5l01XKp/Phoenix-Component-Library?node-id=3744-6350&m=dev",
-  {
-    variant: { Position: "Bottom-Center" },
-    props: {
-      content: figma.string("Text"),
-    },
-    example: (props) => figma.html`<!-- Import the web component -->
-<script type="module">
-  import './web-components';
-</script>
-
-<!-- Use the web component -->
-<liva-tooltip content="${props.content}" position="bottom-center">
-  <button>Hover me</button>
-</liva-tooltip>`,
-  },
-)
-
-figma.connect(
-  livaTooltipComponent,
-  "https://www.figma.com/design/YSsmFp0wm28RUpu5l01XKp/Phoenix-Component-Library?node-id=3744-6350&m=dev",
-  {
-    variant: { Position: "Left" },
-    props: {
-      content: figma.string("Text"),
-    },
-    example: (props) => figma.html`<!-- Import the web component -->
-<script type="module">
-  import './web-components';
-</script>
-
-<!-- Use the web component -->
-<liva-tooltip content="${props.content}" position="left">
-  <button>Hover me</button>
-</liva-tooltip>`,
-  },
-)
-
-figma.connect(
-  livaTooltipComponent,
-  "https://www.figma.com/design/YSsmFp0wm28RUpu5l01XKp/Phoenix-Component-Library?node-id=3744-6350&m=dev",
-  {
-    variant: { Position: "Right" },
-    props: {
-      content: figma.string("Text"),
-    },
-    example: (props) => figma.html`<!-- Import the web component -->
-<script type="module">
-  import './web-components';
-</script>
-
-<!-- Use the web component -->
-<liva-tooltip content="${props.content}" position="right">
+<liva-tooltip content="${props.content}" position="${props.position}">
   <button>Hover me</button>
 </liva-tooltip>`,
   },
