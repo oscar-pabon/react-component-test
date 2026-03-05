@@ -1,0 +1,221 @@
+/**
+ * Tooltip Component Styles
+ * Matching Figma Phoenix Component Library design
+ * node-id: 5399-78716
+ *
+ * Phoenix Design System Token Mapping:
+ * - Background: --ph-color-slate-800 (#1e293b = rgb(30, 41, 59))
+ * - Text: --ph-color-text-inverted (#ffffff)
+ * - Padding: --ph-spacing-4 (4px) / --ph-spacing-8 (8px)
+ * - Border Radius: --ph-radius-2 (4px)
+ * - Font Size: --ph-font-size-2 (0.875rem = 14px)
+ * - Line Height: --ph-font-line-height-3 (150%)
+ * - Font Family: --ph-font-family (Inter)
+ * - Transitions: --ph-duration (200ms) / --ph-easing
+ */
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.tooltip-trigger {
+  display: inline-block;
+  cursor: help;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--ph-duration) var(--ph-easing),
+              visibility var(--ph-duration) var(--ph-easing),
+              transform var(--ph-duration) var(--ph-easing);
+  pointer-events: none;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.tooltip--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Tooltip Content - Matching Figma "Box" frame */
+.tooltip__content {
+  /* Figma: rgb(30, 41, 59) → Phoenix Token */
+  background-color: var(--ph-color-slate-800);
+
+  /* Figma: rgb(255, 255, 255) → Phoenix Token */
+  color: var(--ph-color-text-inverted);
+
+  /* Figma: 4px vertical, 8px horizontal → Phoenix Tokens */
+  padding: var(--ph-spacing-4) var(--ph-spacing-8);
+
+  /* Figma: 4px → Phoenix Token */
+  border-radius: var(--ph-radius-2);
+
+  /* Figma: Inter, 14px (0.875rem), 400 weight, 150% line-height → Phoenix Tokens */
+  font-family: var(--ph-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: var(--ph-font-size-2);
+  font-weight: 400;
+  line-height: var(--ph-font-line-height-3);
+
+  /* Figma: 0px 4px 10px rgba(30, 41, 59, 0.14) - Custom shadow matching design */
+  box-shadow: 0px 4px 10px rgba(30, 41, 59, 0.14);
+}
+
+/* Tooltip Arrow (Beak) - Matching Figma "Beak" vector */
+.tooltip__arrow {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+
+  /* Figma: Same background as tooltip box → Phoenix Token */
+  background-color: var(--ph-color-slate-800);
+
+  transform: rotate(45deg);
+}
+
+/* ============================================
+   Position Variants - Matching Figma exactly
+   ============================================ */
+
+/* Position: Top-Left */
+.tooltip--top-left {
+  bottom: calc(100% + var(--ph-spacing-8));
+  left: 0;
+  transform: translateY(var(--ph-spacing-4));
+}
+
+.tooltip--top-left.tooltip--visible {
+  transform: translateY(0);
+}
+
+.tooltip--top-left .tooltip__arrow {
+  bottom: -3px; /* Half of arrow height for perfect alignment */
+  left: 10px; /* From Figma "Beak Box" horizontal padding */
+}
+
+/* Position: Top-Right */
+.tooltip--top-right {
+  bottom: calc(100% + var(--ph-spacing-8));
+  right: 0;
+  transform: translateY(var(--ph-spacing-4));
+}
+
+.tooltip--top-right.tooltip--visible {
+  transform: translateY(0);
+}
+
+.tooltip--top-right .tooltip__arrow {
+  bottom: -3px; /* Half of arrow height for perfect alignment */
+  right: 10px; /* From Figma "Beak Box" horizontal padding */
+}
+
+/* Position: Top Center */
+.tooltip--top-center {
+  bottom: calc(100% + var(--ph-spacing-8));
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--ph-spacing-4));
+}
+
+.tooltip--top-center.tooltip--visible {
+  transform: translateX(-50%) translateY(0);
+}
+
+.tooltip--top-center .tooltip__arrow {
+  bottom: -3px; /* Half of arrow height for perfect alignment */
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* Position: Bottom-Left */
+.tooltip--bottom-left {
+  top: calc(100% + var(--ph-spacing-8));
+  left: 0;
+  transform: translateY(calc(-1 * var(--ph-spacing-4)));
+}
+
+.tooltip--bottom-left.tooltip--visible {
+  transform: translateY(0);
+}
+
+.tooltip--bottom-left .tooltip__arrow {
+  top: -3px; /* Half of arrow height for perfect alignment */
+  left: 10px; /* From Figma "Beak Box" horizontal padding */
+}
+
+/* Position: Bottom-Right */
+.tooltip--bottom-right {
+  top: calc(100% + var(--ph-spacing-8));
+  right: 0;
+  transform: translateY(calc(-1 * var(--ph-spacing-4)));
+}
+
+.tooltip--bottom-right.tooltip--visible {
+  transform: translateY(0);
+}
+
+.tooltip--bottom-right .tooltip__arrow {
+  top: -3px; /* Half of arrow height for perfect alignment */
+  right: 10px; /* From Figma "Beak Box" horizontal padding */
+}
+
+/* Position: Bottom-Center */
+.tooltip--bottom-center {
+  top: calc(100% + var(--ph-spacing-8));
+  left: 50%;
+  transform: translateX(-50%) translateY(calc(-1 * var(--ph-spacing-4)));
+}
+
+.tooltip--bottom-center.tooltip--visible {
+  transform: translateX(-50%) translateY(0);
+}
+
+.tooltip--bottom-center .tooltip__arrow {
+  top: -3px; /* Half of arrow height for perfect alignment */
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* Position: Left */
+.tooltip--left {
+  right: calc(100% + var(--ph-spacing-8));
+  top: 50%;
+  transform: translateY(-50%) translateX(var(--ph-spacing-4));
+}
+
+.tooltip--left.tooltip--visible {
+  transform: translateY(-50%) translateX(0);
+}
+
+.tooltip--left .tooltip__arrow {
+  right: -3px; /* Half of arrow width for perfect alignment */
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* Position: Right */
+.tooltip--right {
+  left: calc(100% + var(--ph-spacing-8));
+  top: 50%;
+  transform: translateY(-50%) translateX(calc(-1 * var(--ph-spacing-4)));
+}
+
+.tooltip--right.tooltip--visible {
+  transform: translateY(-50%) translateX(0);
+}
+
+.tooltip--right .tooltip__arrow {
+  left: -3px; /* Half of arrow width for perfect alignment */
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* Accessibility */
+.tooltip[role="tooltip"] {
+  user-select: none;
+}
