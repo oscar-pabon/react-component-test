@@ -20,11 +20,7 @@ interface LivaButtonProps extends React.DetailedHTMLProps<React.HTMLAttributes<H
 
 interface LivaTooltipProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> {
   content?: string;
-  position?: 'top' | 'bottom' | 'left' | 'right';
-  theme?: 'dark' | 'light';
-  size?: 'small' | 'medium' | 'large';
-  showArrow?: boolean;
-  trigger?: 'hover' | 'click' | 'focus';
-  open?: boolean;
+  position?: 'top-left' | 'bottom-left' | 'top-right' | 'bottom-right' | 'top-center' | 'bottom-center' | 'right' | 'left';
+  visible?: boolean;
   children?: React.ReactNode;
 }

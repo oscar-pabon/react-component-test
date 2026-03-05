@@ -4,6 +4,7 @@ import App from './App';
 import './styles/variables.css';
 import './styles/global.css';
 import '@ansira/ui-kit';
+import './web-components';
 
 ReactDOM.render(
   <React.StrictMode>
