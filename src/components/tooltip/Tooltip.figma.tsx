@@ -12,7 +12,7 @@ figma.connect(
   "https://www.figma.com/design/YSsmFp0wm28RUpu5l01XKp/Phoenix-Component-Library?node-id=3744-6350&m=dev",
   {
     props: {
-      content: figma.textContent("Text#3744:3"),
+      content: figma.textContent("Text"),
       position: figma.enum("Position", {
         "Top-Left": "Top-Left",
         "Bottom-Left": "Bottom-Left",
