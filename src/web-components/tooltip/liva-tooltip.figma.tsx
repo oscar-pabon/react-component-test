@@ -17,7 +17,14 @@ figma.connect(
     props: {
       content: figma.string("Text"),
     },
-    example: (props) => figma.html`<liva-tooltip content="${props.content}" position="top-left">
+    example: (props) => figma.html`<!-- Import the web component -->
+<script type="module">
+  import './web-components';
+  // or: import { LivaTooltip } from './web-components/tooltip';
+</script>
+
+<!-- Use the web component -->
+<liva-tooltip content="${props.content}" position="top-left">
   <button>Hover me</button>
 </liva-tooltip>`,
   },
@@ -31,7 +38,13 @@ figma.connect(
     props: {
       content: figma.string("Text"),
     },
-    example: (props) => figma.html`<liva-tooltip content="${props.content}" position="top-right">
+    example: (props) => figma.html`<!-- Import the web component -->
+<script type="module">
+  import './web-components';
+</script>
+
+<!-- Use the web component -->
+<liva-tooltip content="${props.content}" position="top-right">
   <button>Hover me</button>
 </liva-tooltip>`,
   },
@@ -45,7 +58,13 @@ figma.connect(
     props: {
       content: figma.string("Text"),
     },
-    example: (props) => figma.html`<liva-tooltip content="${props.content}" position="top-center">
+    example: (props) => figma.html`<!-- Import the web component -->
+<script type="module">
+  import './web-components';
+</script>
+
+<!-- Use the web component -->
+<liva-tooltip content="${props.content}" position="top-center">
   <button>Hover me</button>
 </liva-tooltip>`,
   },
@@ -59,7 +78,13 @@ figma.connect(
     props: {
       content: figma.string("Text"),
     },
-    example: (props) => figma.html`<liva-tooltip content="${props.content}" position="bottom-left">
+    example: (props) => figma.html`<!-- Import the web component -->
+<script type="module">
+  import './web-components';
+</script>
+
+<!-- Use the web component -->
+<liva-tooltip content="${props.content}" position="bottom-left">
   <button>Hover me</button>
 </liva-tooltip>`,
   },
@@ -73,7 +98,13 @@ figma.connect(
     props: {
       content: figma.string("Text"),
     },
-    example: (props) => figma.html`<liva-tooltip content="${props.content}" position="bottom-right">
+    example: (props) => figma.html`<!-- Import the web component -->
+<script type="module">
+  import './web-components';
+</script>
+
+<!-- Use the web component -->
+<liva-tooltip content="${props.content}" position="bottom-right">
   <button>Hover me</button>
 </liva-tooltip>`,
   },
@@ -87,7 +118,13 @@ figma.connect(
     props: {
       content: figma.string("Text"),
     },
-    example: (props) => figma.html`<liva-tooltip content="${props.content}" position="bottom-center">
+    example: (props) => figma.html`<!-- Import the web component -->
+<script type="module">
+  import './web-components';
+</script>
+
+<!-- Use the web component -->
+<liva-tooltip content="${props.content}" position="bottom-center">
   <button>Hover me</button>
 </liva-tooltip>`,
   },
@@ -101,7 +138,13 @@ figma.connect(
     props: {
       content: figma.string("Text"),
     },
-    example: (props) => figma.html`<liva-tooltip content="${props.content}" position="left">
+    example: (props) => figma.html`<!-- Import the web component -->
+<script type="module">
+  import './web-components';
+</script>
+
+<!-- Use the web component -->
+<liva-tooltip content="${props.content}" position="left">
   <button>Hover me</button>
 </liva-tooltip>`,
   },
@@ -115,7 +158,13 @@ figma.connect(
     props: {
       content: figma.string("Text"),
     },
-    example: (props) => figma.html`<liva-tooltip content="${props.content}" position="right">
+    example: (props) => figma.html`<!-- Import the web component -->
+<script type="module">
+  import './web-components';
+</script>
+
+<!-- Use the web component -->
+<liva-tooltip content="${props.content}" position="right">
   <button>Hover me</button>
 </liva-tooltip>`,
   },
