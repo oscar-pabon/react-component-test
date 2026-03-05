@@ -32,6 +32,11 @@ figma.connect(
       <Button 
         label={props.label} 
         disabled={props.disabled}
+        variant={props.variant as any}
+        size={props.size as any}
+        rounded={props.rounded}
+        onClick={() => {}}
+      />
     ),
   },
 )

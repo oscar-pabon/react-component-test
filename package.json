@@ -21,11 +21,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ansira/style-foundation": "^1.0.32",
+    "@ansira/ui-kit": "^1.0.0",
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "rxjs": "^7.8.2",
+    "style-dictionary": "^5.3.3",
     "typescript": "^4.0.0"
   },
   "devDependencies": {
